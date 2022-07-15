@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+@font-face {
+    font-family: 'elixia';
+    src: url('https://files.jcink.net/uploads/summertests/fonts/ELIXIA.ttf');
+}
+
+$neon-red: #c02020;
+$light-red: #ff0020;
+
+$font-xlarge: 40px;
+$font-medium: 12px;
+
+$spacing-xl: 64px;
+$spacing-md: 25px;
+
+.home-container {
+    background-color: #1a0000;
+    min-height: 100vh;
+    
+
+    .home-title {
+        font-family: 'elixia';
+        font-size: 151px;
+        color: #ff4d4d;
+        animation: textShadow 1.6s infinite;
+        text-align: center;
+        padding-top: 30px;
+
+        animation: shake 600ms ease-in-out infinite alternate, rotate-letter 10s infinite; 
+        text-shadow: 0 0 .07em,
+            -.2em 0 2em,
+            .2em 0 2em;
+        user-select: none;
+        
+
+        div {
+            animation: rotate-letter 10s infinite;
+            font-family: 'elixia';
+            display: inline-block;
+        }
+
+    }
+
+    .container {
+        box-sizing: inherit;
+        margin-bottom: 40px;
+        padding: $spacing-md;
+        border: 7px solid #ff4d4d;
+        border-radius: 2px;
+        animation: neon-effect-box 0.8s cubic-bezier(0.94, 0.46, 0.52, 1.16) infinite alternate;
+        width: 278px;
+        height: 221px;
+    }
+
+    section {
+        display: flex;
+        margin: $spacing-xl 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-family: 'Dela Gothic One', cursive;
+        font-size: $font-xlarge;
+        color: #ff4d4d;
+        animation: textShadow 1.6s infinite;
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+
+
+    }
+
+    .box {
+        background: #ff4d4d;
+        padding: 5px 35px 35px 5px;
+        letter-spacing: 4px;
+        margin-bottom: $spacing-md;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 26px;
+        padding-top: 22px;
+        height: 157px;
+    }
+
+    .p {
+        font-family: monospace;
+        color: black;
+        font-size: 20px;
+        padding: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 100px;
+    }
+
+    .home-btn {
+        font-family: monospace;
+        width: 145px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+}
+
+
+@keyframes rotate-letter {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes neon-effect-box {
+    from {
+        box-shadow: 0 0 0px $neon-red;
+    }
+
+    to {
+        box-shadow: 0 0 24px #ff4d4d;
+    }
+}

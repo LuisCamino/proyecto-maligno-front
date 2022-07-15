@@ -1,0 +1,165 @@
+@mixin btn {
+    background: darkgray;
+    border-top: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+
+            .notepadContainer {
+                /* position: absolute; */
+                padding-top: 150px;
+                display: block;
+                max-width: 800px;
+                min-height: 20px;
+                margin: auto; 
+                box-sizing: border-box;
+
+                .notepad {
+                    background: #BFBFBF;
+                    display: block;
+                    min-height: 100px;
+                    width: 100%;
+                    padding: 4px;
+                    -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.75);
+                    box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.75);
+                    border: 1.4px solid white;
+                }
+                
+                .notepad-bar {
+                    width: 100%;
+                    background: #01007A;
+                    height: 23px;
+                }
+                
+                .notepad-title {
+                    color: white;
+                    letter-spacing: .5px;
+                    word-spacing: .5px;
+                    padding-left: 5px;
+                    float: left;
+                    font-weight: 600;
+                }
+                
+                .notepad-minimize, .notepad-maximize, .notepad-exit	{
+                    height: 100%;
+                    display: block;
+                    float: right;
+    /*                 padding-top: 3px; */
+                    padding-bottom: 3px;
+                    cursor: pointer;
+                }
+                
+                .notepad-exit {
+                    /* padding-left:  5px; */
+                    padding-right: 5px;
+                }
+                
+                .button-minimize, .button-maximize, .button-exit  {
+                    background: #BFBFBF;
+                    height: 90%;
+                    width: 19px;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid black;
+                    border-left: 1px solid white;
+                    border-top: 1px solid white;
+                    }
+                
+                .button-exit {
+                    font-size: 55%;
+                    margin: auto;
+                    text-align: center;
+                }
+                
+                .notepad-icon {
+                    height: 100%;
+                    float: left;
+                    padding-top: 1px;
+                }
+                
+                .notepad-icon img {
+                    object-fit: fill;
+                    display: block;
+                    height: 19px;
+                    width: 19px;
+                }
+                
+                .icon-maximize {
+                    border-bottom: 1px solid black;
+                    border-top: 3px solid black;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    height: 60%;
+                    width: 80%;
+                    display: block;
+                    margin: auto;
+                    margin-top: 1.2px;
+                }
+                
+                .icon-minimize {
+                    border-bottom: 2px solid black;
+                    width: 80%;
+                    height: 80%;
+                    display: block;
+                    marigin: auto;
+                    margin-left: 1.5px;
+                }
+                
+                .notepad-settings {
+                    width: 100%;
+                    float: left;
+                    display: inline-flex;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                }
+                
+                .settings-text {
+                    padding-right: 15px;
+                }
+                
+                .underline {
+                    text-decoration: underline;
+                }
+                
+                .notepad-content {
+                    height: 600px;
+                    /* width: 100%; */
+                    background: white;
+                    clear: both;
+                    border-radius: 1px;
+                    border: 1.2px solid black;
+                    overflow: auto;
+                    padding: 7px;
+                }
+    
+                .theories {
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+    
+                }
+    
+                .selectBtn {
+                    @include btn;
+                    width: 80px;
+                    height: 72%;
+                    margin: 3px;
+                    display: flex;
+                    align-items: center;
+                    
+                    &:active {
+                      border-top: 2px solid black;
+                      border-left: 2px solid black;
+                      border-right: 2px solid gray;
+                      border-bottom: 2px solid gray;
+                    }
+                    
+                    &:hover {
+                      cursor: pointer;
+                    }
+                  }
+            }
+            
+            

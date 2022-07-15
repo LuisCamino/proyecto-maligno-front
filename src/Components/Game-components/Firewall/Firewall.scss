@@ -1,0 +1,150 @@
+.fw-container{
+
+  .fw-game {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur7.cur), auto;
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto 40px;
+    box-shadow: 0 1px 15px #222;
+    overflow: hidden;
+    -webkit-transform: perspective(200px) rotateX(15deg) translateY(-90px);
+            transform: perspective(200px) rotateX(15deg) translateY(-90px);
+  }
+
+  .gameover,
+  .win {
+    background-image: url("https://www.tesselar.mx/hubfs/Imported%20sitepage%20images/Portada_blog_hacking_detected.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .gameover {
+    display: none;
+    background-image: url("https://1.bp.blogspot.com/-RBSX-0ZNMCE/Vu78SsQ8naI/AAAAAAAAFLc/9WfURgI9-UA2J6l_wEcYV0LVnM1fS7Zag/s1600/brick-cool-game-over-wallpapers.jpg");
+    background-position: 50%;
+  }
+  .win {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  button{
+    pointer-events: all;
+    position:absolute ;
+    top:50%;
+    right: 40%;
+    font-family: monospace;
+    width: 145px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color:rgba(255, 255, 255, 0.61);
+    border: 2px solid whitesmoke;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .wall-left,
+  .wall-right {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400%;
+    background-image: url("https://images.unsplash.com/photo-1495578942200-c5f5d2137def?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMG9mJTIwZmFtZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+  }
+  .wall-left {
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 5% 0, 35% 15%, 55% 35%, 45% 45%, 65% 60%, 30% 80%, 40% 100%, 0 100%);
+  }
+  .wall-right {
+    right: 0;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 60% 100%, 44% 81%, 70% 60%,57% 44%, 65% 35%,  40% 15%);
+  }
+  
+  .fw-game:hover .wall-left,
+  .fw-game:hover .wall-right {
+    -webkit-animation: wallScroll 10s ease-in forwards;
+            animation: wallScroll 10s ease-in forwards;
+  }
+  .fw-game:hover .win {
+    -webkit-animation: win 10s linear forwards;
+            animation: win 10s linear forwards;
+  }
+  
+  .gamfw-gamee:hover .start-spot {
+    display: none;
+  }
+  
+  .wall-left:hover ~ .gameover,
+  .wall-right:hover ~ .gameover,
+  .gameover:hover {
+    display: block;
+    z-index: 1;
+  }
+  
+
+  .gameover h1,
+  .win h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .instructions {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    }
+  
+
+  .fw-start{
+    font-size: 30px;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: black;
+  }
+
+}
+
+  @keyframes wallScroll {
+    0% {
+      transform: none;
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+
+  @keyframes win {
+    0% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  
+
+  

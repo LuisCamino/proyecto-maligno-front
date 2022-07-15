@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+.login-container {
+  background-color: #1a0000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .login-title {
+    font-family: 'elixia';
+    color:#ff4d4d;
+    font-size: 170px;
+    animation:shake 600ms ease-in-out infinite alternate;
+    text-shadow: 0 0 .07em,
+            -.2em 0 2em,
+            .2em 0 2em;
+        user-select: none;
+  }
+
+  .submit-btn {
+    margin-bottom: 52px;
+    margin-top: 40px;
+    font-family: monospace;
+    width: 145px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: glitch 750ms infinite, scan 2s infinite;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+
+        input {
+            height: 50px;
+            width: 300px;
+            font-size: 30px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+    }
+  }
+
+  span {
+    font-family: 'elixia';
+    color:#ff4d4d;
+    font-size: 75px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: 'elixia';
+    color:#ff4d4d;
+    font-size: 50px;
+   
+  }
+
+  .login-statement {
+    border: 7px solid #ff4d4d;
+    background-color: #00000060;
+    width: wrap;
+    height: wrap;
+    border-radius: 2px;
+    animation: neon-effect-box 0.8s cubic-bezier(0.94, 0.46, 0.52, 1.16) infinite alternate;
+
+    p {
+      font-family: monospace;
+      font-size: 20px;
+      color: #c3c3c3;
+      margin: 30px 0px 40px 30px;
+      text-align: center;
+      padding-right: 20px;
+    }
+  }
+}
+
+@keyframes glitch {
+  0% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  5% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+    opacity: 0.75;
+  }
+  10% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  15% {
+    -moz-transform: skewX(-5deg);
+    -ms-transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 0.75;
+  }
+  20% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  45% {
+    -moz-transform: skewX(3deg);
+    -ms-transform: skewX(3deg);
+    -webkit-transform: skewX(3deg);
+    transform: skewX(3deg);
+    opacity: 0.75;
+  }
+  50% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  55% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 0.75;
+  }
+  60% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  75% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+  }
+  80% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  85% {
+    -moz-transform: skewX(-8deg);
+    -ms-transform: skewX(-8deg);
+    -webkit-transform: skewX(-8deg);
+    transform: skewX(-8deg);
+    opacity: 0.75;
+  }
+  90% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 97%;
+  }
+  100% {
+    top: 0%;
+  }
+}

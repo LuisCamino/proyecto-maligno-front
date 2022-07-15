@@ -1,0 +1,139 @@
+.stolen-container {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.925);
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: 'elixia';
+    font-size: 85px;
+    color: #ff4d4d;
+    animation: textShadow 1.6s infinite;
+    text-align: center;
+    padding-top: 30px;
+
+  }
+
+  .description {
+    text-align: center;
+    color: whitesmoke; 
+    font-size: 20px;
+    margin: 20px auto;
+    width: 800px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .result .score {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
+  }
+
+  .timer {
+    .time-left {
+      font-family: 'elixia';
+    font-size: 40px;
+    color: #ff4d4d;
+    animation: textShadow 1.6s infinite;
+    text-align: center;
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
+  .startBtn {
+    margin: 20px auto 0;
+    font-size: 30px;
+    width: 100px;
+    height: 36px;
+    background: #ff4d4d;
+    border: whitesmoke 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'elixia';
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  .startBtn:hover {
+    cursor: pointer;
+  }
+
+  .startBtn:active {
+    background: #c02020;
+  }
+
+  .game {
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    cursor: url('https://www.dropbox.com/s/th0zd8ufw5xkwye/mallet.png?raw=1'), pointer;
+  }
+
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+    gap: 50px;
+  }
+
+  .hole::after {
+    display: block;
+    background-color:#ff4d4d;
+    content: '';
+    width: 130px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 7;
+    bottom: -30px;
+  }
+
+  .pc,
+  .other {
+    position: absolute;
+    top: 100%;
+    width: 100px;
+    height: 150px;
+    transition: all 0.4s;
+  }
+
+  .laptop,
+  .computer,
+  .olddisk,
+  .pill,
+  .gun,
+  .knife {
+    position: relative;
+
+    img {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+
+  .pc:hover,
+  .other:hover {
+    cursor: url('https://www.dropbox.com/s/th0zd8ufw5xkwye/mallet.png?raw=1'), pointer;
+  }
+
+  .hole.up .pc {
+    top: 20px;
+  }
+
+  .hole.down .other {
+    top: 20px;
+  }
+}

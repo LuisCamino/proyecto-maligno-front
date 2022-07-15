@@ -1,0 +1,63 @@
+//IMPLEMENTACIÓN RESPONSIVE
+
+$mobile-little: 320px;
+$mobile-normal: 375px;
+$mobile-big: 425px;
+$tablet: 768px;
+$desktop-normal: 1024px;
+$desktop-nughy: 1366px; 
+$desktop-big: 1440px;
+$desktop-extra-big: 2560px;
+
+//Sin mediaquery  de 0 a 320px
+
+//Mayor de 320px
+@mixin mobile-little {
+  @media only screen and (min-width: $mobile-little) {
+    @content;
+  }
+}
+//Mayor de 375px
+@mixin mobile-normal {
+  @media only screen and (min-width: $mobile-normal) {
+    @content;
+  }
+}
+//Mayor de 425px
+@mixin mobile-big {
+  @media only screen and (min-width: $mobile-big) {
+    @content;
+  }
+}
+//Mayor de 768px 
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+//Mayor de 1024px 
+@mixin desktop-normal {
+  @media only screen and (min-width: $desktop-normal) {
+    @content;
+  }
+}
+
+//Mayor de 1366px 
+@mixin desktop-nughy {
+  @media only screen and (min-width: $desktop-nughy) {
+    @content;
+  }
+}
+
+//Mayor de 1440px 
+@mixin desktop-big {
+  @media only screen and (min-width: $desktop-big) {
+    @content;
+  }
+}
+//Mayor de 2560px 
+@mixin desktop-extra-big {
+  @media only screen and (min-width: $desktop-extra-big) {
+    @content;
+  }
+}

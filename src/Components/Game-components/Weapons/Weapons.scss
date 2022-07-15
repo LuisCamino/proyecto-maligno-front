@@ -1,0 +1,187 @@
+
+/* 
+.weaponsContainer {
+    background-image: url("../../../../../maligno-front/src/images/cyberweapons.png"); 
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('../../../images/lupacursor.png'), auto;
+    display: flex;
+}
+
+
+.diskContainer{
+    margin-top: 100vh;
+    justify-content: center;
+} */
+  
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  @media only screen and (min-width: 1500px){ 
+  .lightContainer {
+
+    position: relative;
+    display:block;
+    height: 100vh;
+    background-color: #fff;
+    cursor: url('../../../images/linternacursor2.png'), auto;
+    background-image: url("../../../images/cyberweapons.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px){ 
+  .lightContainer {
+    position: relative;
+    display:block;
+    height: 100vh;
+    background-color: #fff;
+    cursor: url('../../../images/linternacursor.png'), auto;
+    background-image: url("../../../../src/images/cyberweapons.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+  }
+}
+
+
+
+@media only screen and (min-width: 1500px){
+  .light {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: radial-gradient(circle at 50% 50%, transparent 0%, #000 30%);
+    display: flex;
+    justify-content: space-around;
+}
+}
+  
+@media only screen and (min-width: 900px){
+  .light {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: radial-gradient(circle at 50% 50%, transparent 0%, #000 30%);
+    display: flex;
+    justify-content: space-around;
+}
+}
+/* 
+
+
+
+@media only screen and (min-width: 1500px){
+  .diskContainer{
+    margin-top: 750px;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1900px){
+  .diskContainer{
+    margin-top: 450px;
+}
+} */
+
+
+
+.disk{
+        /* filter: opacity(0%); */
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.disk:hover{
+        /* filter:opacity(100%);
+        animation: fadeIn 5s;
+        transition-delay: 2s; */
+        visibility: visible;
+        opacity: 100%;
+        transition: 3s ease-in;
+}
+
+
+
+/* @media only screen and (min-width: 1500px){
+  .sableContainer{
+    margin-top: 750px;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1900px){
+  .sableContainer{
+    margin-top: 450px;
+}
+} */
+
+
+
+.sable{
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.sable:hover{
+        visibility: visible;
+        opacity: 100%;
+        transition: 2s ease-in;
+}
+
+.gun1{
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.gun1:hover{
+        visibility: visible;
+        opacity: 100%;
+        transition: 2s ease-in;
+}
+
+.gun2{
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.gun2:hover{
+        visibility: visible;
+        opacity: 100%;
+        transition: 2s ease-in;
+}
+
+.gun3{
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.gun3:hover{
+        visibility: visible;
+        opacity: 100%;
+        transition: 2s ease-in;
+}
+
+.gun4{
+        opacity: 0%;
+        transition: 1s ease-out;
+    }
+
+.gun4:hover{
+        visibility: visible;
+        opacity: 100%;
+        transition: 2s ease-in;
+}

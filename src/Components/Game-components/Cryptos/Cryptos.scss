@@ -1,0 +1,75 @@
+.cryptos-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.925);
+
+  .cryptos-title {
+    padding: 10px;
+    font-family: "elixia";
+    font-size: 85px;
+    color: #ff4d4d;
+    animation: textShadow 1.6s infinite;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .cryptos-description {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 780px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .crypto-turns {
+    color: whitesmoke;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .card img {
+    width: 90%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+
+
+  .card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+  }
+
+  .card-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 25px;
+  }
+
+  .flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+
+
+  .card .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+
+  }
+
+  .flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+  }
+}

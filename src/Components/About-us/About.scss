@@ -1,0 +1,80 @@
+.aboutContainer {
+  background: #222;
+  font-family: helvetica;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .blue {
+    color: #53d9d1;
+  }
+
+  .pink {
+    color: #f27b9b;
+  }
+
+  .orange {
+    color: #eb7132;
+  }
+
+  .aboutConsole {
+    border: 1px solid #444;
+    border-radius: 3px;
+    width: 900px;
+    height: 400px;
+
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.75);
+
+    .top {
+      background: #333;
+      color: #666;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+
+      .options {
+        font-size: 16px;
+        float: left;
+      }
+    }
+
+    .text {
+      font-family: courier;
+      color: #fff;
+      font-size: 14px;
+      padding: 0.25rem;
+    }
+  }
+
+  .typewriter {
+    overflow: hidden;
+    width: fit-content;
+    white-space: nowrap;
+    border-right: 0.15em solid #eb7132;
+    animation: typing-about 3s steps(15, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing-about {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 28%;
+    }
+  }
+
+ 
+  @keyframes blink-caret {
+
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: orange;
+    }
+  }
+}
